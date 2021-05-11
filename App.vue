@@ -64,6 +64,6 @@ button {
 	flex: 1;
 	flex-direction: column;
 	background-color: #ffffff;
-	padding: 10px;
+	// padding: 30rpx;
 }
 </style>

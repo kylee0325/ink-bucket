@@ -5,12 +5,12 @@ const db = uniCloud.database()
 const dbCmd = db.command
 exports.main = async (event, context) => {
 	//event为客户端上传的参数
-	console.log('event : ' + event)
+	// console.log('event : ' + event)
 
 	let params = event.params || {}
 	let payload = {}
-	let noCheckAction = ['register', 'loginByWeixin', 'checkToken', 'login', 'logout', 'sendSmsCode', 'loginBySms',
-		'inviteLogin', 'loginByUniverify'
+	let noCheckAction = ['register', 'loginByWeixin', 'checkToken', 'login', 'logout', 'sendSmsCode',
+		'loginBySms', 'inviteLogin', 'loginByUniverify'
 	]
 
 	if (noCheckAction.indexOf(event.action) === -1) {

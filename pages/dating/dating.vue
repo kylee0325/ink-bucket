@@ -151,7 +151,6 @@ export default {
 		submit() {
 			this.$refs.uForm.validate(valid => {
 				if (valid) {
-					if (!this.model.agreement) return this.$u.toast('请勾选协议');
 					console.log('验证通过');
 				} else {
 					console.log('验证失败');

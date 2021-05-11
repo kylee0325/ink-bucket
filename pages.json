@@ -4,9 +4,16 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页,
 		{
-			"path": "pages/main/main",
+			"path": "pages/main/public",
 			"style": {
-				"navigationBarTitleText": "墨水桶"
+				"navigationBarTitleText": "墨水桶",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/main/private",
+			"style": {
+				"navigationBarTitleText": "墨水桶",
+				"enablePullDownRefresh": true
 			}
 		}, {
 			"path": "pages/login/login",
@@ -24,6 +31,53 @@
 			"style": {
 				"navigationBarTitleText": "发起聚会"
 			}
+		}, {
+			"path": "pages/ink-articles/add",
+			"style": {
+				"navigationBarTitleText": "新增"
+			}
+		}, {
+			"path": "pages/ink-articles/edit",
+			"style": {
+				"navigationBarTitleText": "编辑"
+			}
+		}, {
+			"path": "pages/ink-articles/list",
+			"style": {
+				"navigationBarTitleText": "列表"
+			}
+		}, {
+			"path": "pages/ink-articles/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}, {
+			"path": "pages/ink-articles-keywords/add",
+			"style": {
+				"navigationBarTitleText": "新增"
+			}
+		}, {
+			"path": "pages/ink-articles-keywords/edit",
+			"style": {
+				"navigationBarTitleText": "编辑"
+			}
+		}, {
+			"path": "pages/ink-articles-keywords/list",
+			"style": {
+				"navigationBarTitleText": "列表"
+			}
+		}, {
+			"path": "pages/ink-articles-keywords/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}, {
+			"path": "pages/main/webview",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"tabBar": {
@@ -32,8 +86,13 @@
 		"backgroundColor": "#ffffff",
 		"borderStyle": "black",
 		"list": [{
-			"pagePath": "pages/main/main",
-			"text": "首页",
+			"pagePath": "pages/main/public",
+			"text": "公桶",
+			"iconPath": "static/img/home.png",
+			"selectedIconPath": "static/img/home_select.png"
+		}, {
+			"pagePath": "pages/main/private",
+			"text": "私桶",
 			"iconPath": "static/img/home.png",
 			"selectedIconPath": "static/img/home_select.png"
 		}, {
