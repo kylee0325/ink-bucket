@@ -77,6 +77,7 @@ export default {
 				},
 				success: e => {
 					if (e.result.code > 0) {
+						this.logout();
 						uni.showModal({
 							title: '登录状态已失效,请重新登录',
 							success(res) {
@@ -103,7 +104,7 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations(['login']),
+		...mapMutations(['login', 'logout']),
 		guideToLogin() {
 			uni.showModal({
 				title: '未登录',
